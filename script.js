@@ -1,4 +1,4 @@
-//Set-up Game
+//Set-up of computer choices and game settings
 function computerPlay() {
     let choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random()*choices.length)];
@@ -18,7 +18,7 @@ function playRound(playerSelection) {
 
     const computerSelection = computerPlay();
 
-//Conditional Statements-
+//Conditional Statements- Structure of the game
  if(computerSelection == "rock" && playerSelection == "rock" ||
    computerSelection == "paper" && playerSelection == "paper" ||
    computerSelection == "scissors" && playerSelection == "scissors") {
@@ -97,6 +97,7 @@ function restartButton () {
 
 const buttons = document.querySelectorAll('.btn');
 
+//Event Listner
     buttons.forEach((button) => {
     button.addEventListener('click', function(event) {
         playRound(event.target.value);
