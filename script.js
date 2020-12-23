@@ -97,7 +97,7 @@ function restartButton () {
 
 const buttons = document.querySelectorAll('.btn');
 
-//Event Listner
+//Event Listener
     buttons.forEach((button) => {
     button.addEventListener('click', function(event) {
         playRound(event.target.value);
